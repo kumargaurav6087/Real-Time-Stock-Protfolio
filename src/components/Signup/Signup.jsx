@@ -10,6 +10,8 @@ export default function SignupPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
   const handleSignup = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -24,7 +26,7 @@ export default function SignupPage() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        `${API_URL}api/auth/register`,
         userData,
         {
           headers: {
