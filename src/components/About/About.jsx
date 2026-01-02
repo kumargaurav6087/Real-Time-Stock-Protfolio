@@ -61,3 +61,65 @@ export default function About() {
     </main>
   );
 }
+
+// "use client";
+// import React from "react";
+// import { useRouter } from "next/navigation";
+
+// export default function About() {
+//   const router = useRouter();
+
+//   const features = [
+//     { icon: "📝", title: "Wide Range of Quizzes", desc: "Choose from multiple subjects and categories to test your knowledge." },
+//     { icon: "⏳", title: "Timed Challenges", desc: "Compete against the clock and improve your speed and accuracy." },
+//     { icon: "🔒", title: "Secure Login", desc: "Your progress and scores are saved securely with authentication." },
+//     { icon: "📊", title: "Progress Tracking", desc: "View your scores, track improvements, and challenge yourself daily." },
+//     { icon: "🏆", title: "Leaderboard", desc: "Compete with friends and see who tops the quiz leaderboard." },
+//   ];
+
+//   return (
+//     <main className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white px-6 py-16">
+      
+//       {/* Hero Section */}
+//       <section className="max-w-5xl mx-auto text-center mb-20">
+//         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-yellow-400">
+//           About <span className="text-blue-400 font-extrabold">LearnXP</span>
+//         </h1>
+//         <p className="text-lg md:text-xl mb-6 text-blue-200">
+//           An interactive quiz platform designed to make learning fun, competitive, 
+//           and rewarding. Challenge yourself with quizzes across multiple topics 
+//           and track your growth in real time.
+//         </p>
+//       </section>
+
+//       {/* Features with Icons */}
+//       <section className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-20">
+//         {features.map((feature, idx) => (
+//           <div
+//             key={idx}
+//             className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-md hover:shadow-2xl hover:scale-105 transition transform flex flex-col items-center text-center border border-white/20"
+//           >
+//             <div className="text-5xl mb-3 text-yellow-400">{feature.icon}</div>
+//             <h3 className="text-xl font-semibold mb-2 text-blue-300">{feature.title}</h3>
+//             <p className="text-blue-200">{feature.desc}</p>
+//           </div>
+//         ))}
+//       </section>
+
+//       {/* How It Works Section */}
+//       <section className="max-w-4xl mx-auto text-center mb-20">
+//         <h2 className="text-3xl font-bold text-blue-300 mb-6">How LearnXP Works</h2>
+//         <div className="text-blue-200 text-lg space-y-4">
+//           {["Sign up or log in to your account.", 
+//             "Select a quiz category or subject of your choice.", 
+//             "Answer questions within the time limit and submit your quiz.", 
+//             "View your score, track your progress, and climb the leaderboard."].map((step, i) => (
+//             <div key={i} className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-md p-4 hover:shadow-lg hover:scale-105 transition transform border-l-4 border-blue-400 text-left">
+//               <span className="font-semibold text-yellow-400">{`${i + 1}️⃣`}</span> {step}
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+//     </main>
+//   );
+// }
